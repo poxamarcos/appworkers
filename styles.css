@@ -335,6 +335,7 @@ header .navigation .navigation-items a:hover:before {
         z-index: 2;
         position: fixed;
         width: 100%;
+        height: 90px;
     }
 
     header>img {
@@ -394,6 +395,7 @@ header .navigation .navigation-items a:hover:before {
 
     .empresa-container {
         flex-direction: column;
+        justify-content: center;
     }
 
     .empresa-container-texts {
@@ -422,7 +424,7 @@ header .navigation .navigation-items a:hover:before {
 
     .empresa-img-mobile>img {
         display: block;
-        width: 80%;
+        min-width: 100%;
     }
 
     .empresa-img-desktop>img {
