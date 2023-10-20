@@ -58,17 +58,19 @@ header .navigation .navigation-items a:hover:before {
     width: 100%;
 }
 
-.button-cadastro{
+.button-cadastro {
     padding: 10px 20px;
     background-color: black;
     border-radius: 10px;
     color: #fff;
+    display: none;
 }
 
-.button-login{
+.button-login {
     padding: 10px 30px;
-    background-color:#ffcd00;
+    background-color: #ffcd00;
     border-radius: 10px;
+    display: none;
 }
 
 
@@ -111,7 +113,7 @@ header .navigation .navigation-items a:hover:before {
 
 .home .content p {
     margin-bottom: 40px;
-    width: 60%; 
+    width: 60%;
     color: #000000;
 
 }
@@ -129,18 +131,19 @@ header .navigation .navigation-items a:hover:before {
 
 /*===== SECTION CLIENTES =====*/
 
-.paragraph-clientes{
+.paragraph-clientes {
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 
-.paragraph-clientes > p{
+.paragraph-clientes>p {
     color: #46dfd7;
 }
 
 
 
-.cards-row{
+.cards-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -149,7 +152,7 @@ header .navigation .navigation-items a:hover:before {
     margin-bottom: 50px;
 }
 
-.card-container{
+.card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,39 +165,40 @@ header .navigation .navigation-items a:hover:before {
     margin: 10px;
 }
 
-.card-img{
+.card-img {
     width: 100%;
     background-position: center;
     background-size: cover;
 }
 
-.card-container > h1{
+.card-container>h1 {
     font-size: 18px;
     margin-top: 10px;
 }
 
-.card-container > h3 {
+.card-container>h3 {
     font-weight: 300;
 }
 
 
-.card-container > p{
+.card-container>p {
     padding: 25px;
     font-size: 15px;
 }
 
-.card-stars{
+.card-stars {
     display: flex;
     justify-content: center;
 }
-.card-stars > img{
+
+.card-stars>img {
     width: 60%;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
 
 
 
-.empresa-container{
+.empresa-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -202,30 +206,236 @@ header .navigation .navigation-items a:hover:before {
 }
 
 
-.empresa-img, .empresa-container-texts{
+.empresa-img-desktop,
+.empresa-img-mobile,
+.empresa-container-texts {
     /* topo | direita | inferior | esquerda */
     margin: 10% 30px 0 30px;
 }
-.empresa-img > img{
-    width: 80%;
 
+.empresa-img-desktop>img {
+    width: 80%;
 }
 
-.empresa-container-texts{
+.empresa-img-mobile>img {
+    width: 80%;
+}
+
+.empresa-container-texts {
     width: 35%;
 }
 
-.empresa-container-texts > h3{
+.empresa-container-texts>h3 {
     color: #46dfd7;
     font-weight: 400;
 }
 
-.empresa-container-texts > h1{
+.empresa-container-texts>h1 {
     font-size: 2.6em;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.empresa-container-texts > p{
+.empresa-container-texts>p {
     width: 95%;
+}
+
+
+.plataforma-main-text {
+    margin-top: 10%;
+}
+
+.plataforma-main-text>h1 {
+    text-align: center;
+}
+
+.plataforma-main-text>h3 {
+    margin-top: 20px;
+    text-align: center;
+    color: #46dfd7;
+    font-weight: 400;
+}
+
+.container-passos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+.plataforma-container-texts {
+    /* topo | direita | inferior | esquerda */
+    margin: 1% 0 0 0;
+}
+
+.passos-img>img {
+    width: 80%;
+
+}
+
+.plataforma-container-texts {
+    width: 35%;
+}
+
+.plataforma-container-texts>h3 {
+    color: #46dfd7;
+    font-weight: 400;
+}
+
+.plataforma-container-texts>h1 {
+    font-size: 2.6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plataforma-container-texts>p {
+    width: 95%;
+}
+
+
+
+.pagamento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.center-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button-consultoria {
+    padding: 20px 5%;
+    background-color: #000000;
+    border-radius: 10px;
+    margin-top: 10%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.empresa-img-mobile>img {
+    width: 80%;
+}
+
+
+
+@media (max-width: 500px) {
+    header {
+        justify-content: left;
+        margin: 0px;
+        padding: 0px 20px 0px 0px;
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+    }
+
+    header>img {
+        width: 130px;
+    }
+
+
+    header>.navigation {
+        display: none;
+    }
+
+    .home {
+        width: 100%;
+        position: relative;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0px 20px;
+        z-index: 0;
+    }
+
+    .home>.content {
+        width: 90%;
+    }
+
+    .content {
+        margin: 0px 0px 0px 20px;
+    }
+
+
+
+
+
+    .content>.h1-desktop {
+        width: 85%;
+        font-size: 2.5em;
+        font-weight: 600;
+        margin: 80px 0px 0px 0px;
+        padding: 0px;
+        line-height: normal;
+    }
+
+    .content>p {
+        font-size: 18px;
+        font-size: 14px;
+        min-width: 90%;
+    }
+
+    .paragraph-clientes {
+        margin-top: 80px;
+    }
+
+
+    .cards-row {
+        flex-direction: column;
+    }
+
+    .empresa-container {
+        flex-direction: column;
+    }
+
+    .empresa-container-texts {
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .empresa-container-texts>h3 {
+        text-align: center;
+    }
+
+    .empresa-container-texts>h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .empresa-container-texts>p {
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+    }
+    .empresa-img-mobile{
+        margin: 0px 20px;
+    }
+
+    .empresa-img-mobile>img {
+        display: block;
+        width: 80%;
+    }
+
+    .empresa-img-desktop>img {
+        display: none;
+    }
+
+
+}
+
+
+
+@media (min-width: 501px) {
+    .empresa-img-mobile>img {
+        display: none;
+    }
 }
