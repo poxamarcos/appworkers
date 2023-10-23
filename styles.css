@@ -326,6 +326,11 @@ header .navigation .navigation-items a:hover:before {
 }
 
 
+.img-mobile {
+    display: none;
+}
+
+
 
 @media (max-width: 500px) {
     header {
@@ -353,12 +358,15 @@ header .navigation .navigation-items a:hover:before {
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 0px 20px;
+        padding: 0px 0px;
         z-index: 0;
+        margin-top: 70px;
     }
 
     .home>.content {
         width: 90%;
+
+        text-align: center;
     }
 
     .content {
@@ -370,7 +378,7 @@ header .navigation .navigation-items a:hover:before {
 
 
     .content>.h1-desktop {
-        width: 85%;
+        width: 100%;
         font-size: 2.5em;
         font-weight: 600;
         margin: 80px 0px 0px 0px;
@@ -378,10 +386,10 @@ header .navigation .navigation-items a:hover:before {
         line-height: normal;
     }
 
-    .content>p {
-        font-size: 18px;
+    .home>.content>p {
         font-size: 14px;
-        min-width: 90%;
+        width: 100%;
+
     }
 
     .paragraph-clientes {
@@ -418,7 +426,8 @@ header .navigation .navigation-items a:hover:before {
         font-size: 16px;
         width: 100%;
     }
-    .empresa-img-mobile{
+
+    .empresa-img-mobile {
         margin: 0px 20px;
     }
 
@@ -431,13 +440,96 @@ header .navigation .navigation-items a:hover:before {
         display: none;
     }
 
+    .img-mobile {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .img-mobile>img {
+        width: 100%;
+    }
+
+    .button-expanda {
+        width: 100%;
+        text-align: center;
+    }
 
 }
 
 
 
-@media (min-width: 501px) {
+@media (min-width: 501px) and (max-width: 1200px) {
     .empresa-img-mobile>img {
+        display: none;
+    }
+
+
+
+    .navigation-items {
+        display: none;
+    }
+
+    .home {
+        padding: 0px 0px;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home .content {
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .home .content p {
+        width: 60%;
+    }
+
+    .h1-desktop {
+        width: 100%;
+    }
+
+    .home .content>p {
+        width: 100%;
+    }
+
+    .empresa-container {
+        width: 100%;
+    }
+
+    .empresa-img-desktop {
+        padding: 0px;
+        margin: 0px 100px 0px 0px;
+        width: 50%;
+    }
+
+    .empresa-img-desktop>img {
+        min-width: 100%;
+    }
+
+    .empresa-container-texts {
+        margin: 0px;
+        width: 100%;
+        padding: 5px;
+
+    }
+
+    .empresa-container {
+        margin-top: 100px;
+    }
+
+
+    .empresa-img-mobile {
+        display: none;
+    }
+}
+
+
+
+
+@media(min-width: 900px) {
+    .empresa-img-mobile {
         display: none;
     }
 }
